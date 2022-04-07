@@ -4,12 +4,24 @@ import com.dh.ctdecommerce.devbooks.model.Categories;
 
 public class CategoriesDto {
 
+    private Long id;
     private String nome;
-    private Categories categories;
 
-    public CategoriesDto() {
-    }
-
+    
+	public CategoriesDto() {
+		
+	}
+	
+	public CategoriesDto(Long id, String nome) {
+		this.id = id;
+		this.nome = nome;
+	}
+	
+	public CategoriesDto(Categories relacao) {
+		this.id = relacao.getId();
+		this.nome = relacao.getNome();
+	}
+    
     public String getNome() {
         return nome;
     }
@@ -18,11 +30,15 @@ public class CategoriesDto {
         this.nome = nome;
     }
 
-    public Categories getCategories() {
-        return categories;
-    }
+	public Long getId() {
+		return id;
+	}
 
-    public void setCategories(Categories categories) {
-        this.categories = categories;
-    }
+	public void setId(Long id) {
+		this.id = id;
+	}
+    
+    
+
+
 }

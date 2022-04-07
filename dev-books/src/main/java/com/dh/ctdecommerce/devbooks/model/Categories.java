@@ -8,7 +8,7 @@ public class Categories {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
     private String nome;
     @OneToMany(mappedBy = "categories", fetch = FetchType.LAZY)
     private Set<Products> products = new HashSet<>();
@@ -16,7 +16,7 @@ public class Categories {
     public Categories() {
     }
 
-    public Categories(Integer id, String nome) {
+    public Categories(Long id, String nome) {
         this.id = id;
         this.nome = nome;
     }
@@ -25,11 +25,11 @@ public class Categories {
         this.nome = nome;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
