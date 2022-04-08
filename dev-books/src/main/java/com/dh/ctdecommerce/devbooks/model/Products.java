@@ -1,6 +1,16 @@
 package com.dh.ctdecommerce.devbooks.model;
 
-import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
+
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
 
 @Entity
 @Table
@@ -8,19 +18,20 @@ public class Products {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
     private String title;
     private String description;
     private Double price;
     private String image;
+ 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "category_id")
-    private Categories categories;
+  @JoinColumn(name = "category_id")
+	Set<Categories> categories = new HashSet<>();
 
     public Products() {
     }
 
-    public Products(Integer id, String title, String description, Double price, String image) {
+    public Products(Long id, String title, String description, Double price, String image) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -28,18 +39,13 @@ public class Products {
         this.image = image;
     }
 
-    public Products(String title, String description, Double price, String image) {
-        this.title = title;
-        this.description = description;
-        this.price = price;
-        this.image = image;
-    }
 
-    public Integer getId() {
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -85,4 +91,9 @@ public class Products {
                 ", image='" + image + '\'' +
                 '}';
     }
+
+	public Set<Categories> getCategories() {
+		// TODO Auto-generated method stub
+		return categories;
+	}
 }
