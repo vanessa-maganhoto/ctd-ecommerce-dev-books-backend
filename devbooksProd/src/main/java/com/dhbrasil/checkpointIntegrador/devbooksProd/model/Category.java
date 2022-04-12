@@ -12,14 +12,16 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
+    private String image;
     @OneToMany(mappedBy = "category", fetch = FetchType.LAZY)
     private Set<Products> products = new HashSet<>();
 
     public Category(){}
 
-    public Category(Long id, String nome) {
+    public Category(Long id, String nome, String image) {
         this.id = id;
         this.nome = nome;
+        this.image = image;
     }
 
     public Long getId() {
@@ -38,6 +40,14 @@ public class Category {
         this.nome = nome;
     }
 
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
     public Set<Products> getProducts() {
         return products;
     }
@@ -47,6 +57,8 @@ public class Category {
         return "Category{" +
                 "id=" + id +
                 ", nome='" + nome + '\'' +
+                ", image='" + image + '\'' +
+                ", products=" + products +
                 '}';
     }
 }

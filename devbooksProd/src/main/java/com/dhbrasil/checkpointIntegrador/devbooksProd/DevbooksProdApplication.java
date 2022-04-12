@@ -25,11 +25,11 @@ public class DevbooksProdApplication  {
 //	public void run(String... args) throws Exception {
 //
 //
-//		Category c1 = categoryRepository.save(new Category(null,"Metodologias Ágeis"));
-//		Category c2 = categoryRepository.save(new Category(null,"Design"));
-//		Category c3 = categoryRepository.save(new Category(null,"Lógica de Programação"));//
-//		Category c4 = categoryRepository.save(new Category(null,"Padrões de Projeto"));
-//		Category c5 = categoryRepository.save(new Category(null,"Arquitetura de Software"));
+//		Category c1 = categoryRepository.save(new Category(null, "Metodologias Ágeis", "https://www.quickin.io/wp-content/uploads/2021/02/19833-scaled.jpg"));
+//		Category c2 = categoryRepository.save(new Category(null, "Design", "http://atenaeducacional.com.br/wp-content/uploads/2019/09/designthinkingatena.png"));
+//		Category c3 = categoryRepository.save(new Category(null, "Lógica de Programação", "https://www.brasilcode.com.br/wp-content/uploads/2020/09/Logica-de-programacao-1024x427.png"));
+//		Category c4 = categoryRepository.save(new Category(null, "Padrões de Projeto", "https://refactoring.guru/images/patterns/languages/java.png?id=bcef5252e2f796924d3cf430bc25f5d5"));
+//		Category c5 = categoryRepository.save(new Category(null, "Arquitetura de Software", "https://atmdigital.com.br/wp-content/uploads/2018/02/atm-digital-saiba-o-que-e-arquitetura-de-software-e-qual-a-sua-importancia-770x515.png"));
 //
 //		productsRepository.save(new Products("Scrum: a arte de fazer o dobro do trabalho na metade do tempo", "Livro sobre Scrum", 38.00, "https://febracis.vteximg.com.br/arquivos/ids/155476-1000-1000/SCRUN.png?v=636939596203670000", "Jeff Sutherland", "Leya", c1));
 //		productsRepository.save(new Products("Lean Inception:como alinhar pessoas e construir o produto certo", "Livro para facilitar o processo de construção de produtos", 28.12, "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQky1ZvpCGJsjtodlEfF5TN7N4G_P9u-Mlzb5XANkljoxgCOQD9", "Paulo Caroli", "Editora Caroli", c1));
