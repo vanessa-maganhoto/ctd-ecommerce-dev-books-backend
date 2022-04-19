@@ -56,6 +56,8 @@ public class ProductsService {
         produtoAtual.setDescription(dto.getDescription());
         produtoAtual.setPrice(dto.getPrice());
         produtoAtual.setImage(dto.getImage());
+        produtoAtual.setAuthor(dto.getAuthor());
+        produtoAtual.setPublishingCompany(dto.getPublishingCompany());
 
         Products produtoAtualizado = productsRepository.save(produtoAtual);
         return new ProductsDto(produtoAtualizado);
