@@ -17,4 +17,4 @@ O back-end está neste repositório e o front [aqui](https://github.com/Matheus-
 - Front end web: Netlify
 - Banco de dados: Postgresql
 
-Grupo formado por [Matheus Braga](https://github.com/Matheus-Days), [André Padilha](https://github.com/awpadilha), [Renan Joaquim](https://github.com/rejoaquim), [Marcia Yano](https://github.com/marciayano), Jehan Lucas e [Vanessa Matos](https://github.com/vanessa-maganhoto)
+Grupo formado por [Matheus Braga](https://github.com/Matheus-Days), [André Padilha](https://github.com/awpadilha), [Renan Joaquim](https://github.com/rejoaquim), [Marcia Yano](https://github.com/marciayano), [Jehan Lucas](https://github.com/lucasriber01) e [Vanessa Matos](https://github.com/vanessa-maganhoto)
