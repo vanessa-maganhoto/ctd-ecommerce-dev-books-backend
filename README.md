@@ -13,8 +13,7 @@ O back-end está neste repositório e o front [aqui](https://github.com/Matheus-
 - HTML / Sass / JS 
 - ReactJS
 ### Implantação em produção
-- Back end e : Heroku
-- Front end web: Netlify
-- Banco de dados: Postgresql
+- Back end : AWS
+- Banco de dados: MySql
 
 Grupo formado por [Matheus Braga](https://github.com/Matheus-Days), [André Padilha](https://github.com/awpadilha), [Renan Joaquim](https://github.com/rejoaquim), [Marcia Yano](https://github.com/marciayano), [Jehan Lucas](https://github.com/lucasriber01) e [Vanessa Matos](https://github.com/vanessa-maganhoto)
